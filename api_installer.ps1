@@ -1,0 +1,1 @@
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; (new-object Net.WebClient).DownloadString("https://api.agent.alienvault.cloud/osquery-api/us-east-1/bootstrap?flavor=powershell") | iex; install_agent -controlnodeid 5da2960a-b90c-434f-b57c-49d0757800b0
